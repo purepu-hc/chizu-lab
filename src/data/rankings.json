@@ -1,0 +1,13 @@
+{
+  "meta": { "updated": "2026-10-19" },
+  "categories": [
+    {"id":"grain","name":"米・麦・豆"},
+    {"id":"veg","name":"野菜"},
+    {"id":"fruit","name":"果物"},
+    {"id":"crop","name":"工芸作物など"},
+    {"id":"livestock","name":"畜産"},
+    {"id":"fish","name":"水産"},
+    {"id":"industry","name":"工業"}
+  ],
+  "items": []
+}
