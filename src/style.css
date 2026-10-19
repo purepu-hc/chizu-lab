@@ -198,3 +198,9 @@ button.tag:hover { border-color: var(--ink); }
   .top { padding: 8px 12px; }
   .brand-mark { width: 28px; height: 28px; }
 }
+
+/* おうちラボへ戻るボタン */
+.ouchi-home{display:inline-flex;align-items:center;gap:4px;flex:none;align-self:center;padding:3px 10px 3px 8px;border:2px solid currentColor;border-radius:999px;font:700 12px/1.4 "Zen Maru Gothic",sans-serif;letter-spacing:.04em;color:var(--muted,var(--ink-2,#5a687c));text-decoration:none;white-space:nowrap}
+.ouchi-home:hover{color:var(--ink,#1c2736)}
+.ouchi-home:focus-visible{outline:3px solid var(--accent,#2f6bd8);outline-offset:2px}
+.ouchi-home svg{width:15px;height:15px}
