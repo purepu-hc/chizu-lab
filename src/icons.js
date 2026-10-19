@@ -67,6 +67,27 @@ export const ICONS = {
     <path d="M14 9c-2-4-5-6-8-6M16 9V2M18 9c2-4 5-6 8-6" ${s(1.6)} stroke="#43a047" fill="none"/>`,
   konnyaku: `<rect x="6" y="9" width="20" height="16" rx="3" fill="#8d8d8d" ${s()}/><g fill="#555"><circle cx="11" cy="14" r=".7"/><circle cx="17" cy="13" r=".7"/><circle cx="21" cy="18" r=".7"/><circle cx="13" cy="20" r=".7"/></g>`,
   igusa: `<path d="M5 26h22v-4H5z" fill="#c5b358" ${s()}/><path d="M8 22c1-8 2-14 2-19M13 22c0-8 1-14 3-19M18 22c0-8-1-14 0-19M23 22c-1-8-3-14-2-19" ${s(1.4)} stroke="#689f38" fill="none"/>`,
+  pumpkin: `<path d="M16 9c-7 0-12 4-12 10s5 9 12 9 12-3 12-9-5-10-12-10z" fill="#3f6b3a" ${s()}/><path d="M16 9c-3 4-3 15 0 19M16 9c3 4 3 15 0 19M9 11c-2 5-1 13 3 16M23 11c2 5 1 13-3 16" ${s(1)} stroke="#2a4a27" fill="none"/>
+    <path d="M16 9c0-3 1-5 3-6" ${s(2)} stroke="#6d4c41" fill="none"/>`,
+  corn: `<path d="M16 3c4 0 6 6 6 12s-2 12-6 12-6-6-6-12 2-12 6-12z" fill="#f6cf4a" ${s()}/><path d="M12 9h8M11 14h10M11 19h10M12 24h8M16 4v23" stroke="#c99a12" stroke-width="1"/>
+    <path d="M10 15c-3 5-3 11 3 15M22 15c3 5 3 11-3 15" fill="#7cb342" ${s(1.2)}/>`,
+  spinach: `<path d="M16 30V16" ${s(1.6)} stroke="#c2185b"/><path d="M16 17C9 16 5 11 7 4c6 1 10 6 9 13z" fill="#2e7d32" ${s()}/><path d="M16 19c6-1 10-6 9-13-6 1-9 6-9 13z" fill="#43a047" ${s()}/><path d="M16 22c-4 0-7-2-8-5" ${s(1)} fill="none"/>`,
+  garlic: `<path d="M16 6c-6 4-11 9-11 14 0 5 5 8 11 8s11-3 11-8c0-5-5-10-11-14z" fill="#faf6ee" ${s()}/><path d="M16 6v22M11 10c-2 5-2 12 1 18M21 10c2 5 2 12-1 18" ${s(1)} fill="none"/><path d="M16 6V2" ${s(1.6)}/>`,
+  ginger: `<path d="M5 20c0-4 3-6 6-5 0-4 3-6 6-5 1-3 5-4 7-2 3 2 3 6 0 8-1 4-4 6-8 5-2 3-6 4-9 3-2-1-2-2-2-4z" fill="#e6c27a" ${s()}/><path d="M11 15c1 2 1 4 0 6M17 10c1 2 1 4 0 7" ${s(1)} fill="none" opacity=".6"/>`,
+  renkon: `<circle cx="16" cy="16" r="12" fill="#f3e3c3" ${s()}/><g fill="#fff" ${s(1)}><circle cx="16" cy="16" r="2.6"/><circle cx="16" cy="9" r="2.4"/><circle cx="22.5" cy="13" r="2.4"/><circle cx="21" cy="21" r="2.4"/><circle cx="11" cy="21" r="2.4"/><circle cx="9.5" cy="13" r="2.4"/></g>`,
+  chestnut: `<path d="M16 6c-5 4-11 8-11 15 0 4 5 7 11 7s11-3 11-7c0-7-6-11-11-15z" fill="#8d5524" ${s()}/><path d="M6 21c3 2 7 3 10 3s7-1 10-3c0 4-5 7-10 7S6 25 6 21z" fill="#e8c9a0" ${s(1)}/><path d="M16 6l0-3" ${s(1.6)}/>`,
+  kiwi: `<circle cx="16" cy="16" r="12" fill="#8d6e3f" ${s()}/><circle cx="16" cy="16" r="10" fill="#8bc34a"/><circle cx="16" cy="16" r="4" fill="#f1f8e9"/>
+    <g fill="${O}">${[0, 45, 90, 135, 180, 225, 270, 315].map((a) => `<ellipse cx="16" cy="9.5" rx=".7" ry="1.2" transform="rotate(${a} 16 16)"/>`).join('')}</g>`,
+  biwa: `<g fill="#f5a623" ${s(1.2)}><ellipse cx="12" cy="19" rx="6" ry="7.5"/><ellipse cx="21" cy="17" rx="6" ry="7.5"/></g><path d="M16 6c0-2 2-3 4-3M17 4c4-1 7 1 9 4-4 1-7 0-9-4z" fill="#558b2f" ${s(1)}/>`,
+  soba: `<path d="M5 15h22c0 7-5 12-11 12S5 22 5 15z" fill="#6d4c41" ${s()}/><path d="M8 15c1-4 2-8 1-11M12 15c0-4 1-8 0-12M16 15c0-4 0-8 1-12M20 15c0-4-1-8 0-11M24 15c-1-4-2-7-1-10" stroke="#b08968" stroke-width="1.6" fill="none"/>`,
+  lapear: `<path d="M16 5c-2 0-3 2-3 5-1 3-6 6-6 12 0 4 4 7 9 7s9-3 9-7c0-6-5-9-6-12 0-3-1-5-3-5z" fill="#c5d86d" ${s()}/><path d="M16 5V2" ${s(1.6)}/><path d="M17 4c2-2 5-2 7 0-2 1-5 1-7 0z" fill="#5a9e3a" ${s(1)}/>`,
+  pearl: `<path d="M4 20c0-7 5-12 12-12s12 5 12 12c-4 4-8 6-12 6S8 24 4 20z" fill="#b0bec5" ${s()}/><circle cx="16" cy="18" r="5" fill="#fff" ${s(1.2)}/><circle cx="14.5" cy="16.5" r="1.4" fill="#e1f5fe"/>`,
+  wakame: `<path d="M10 29c-4-6 4-9 0-15s4-9 2-12M17 29c-3-6 5-9 1-15s3-8 2-12M23 29c-3-5 4-8 1-13" stroke="#2e7d32" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+    <path d="M10 29c-4-6 4-9 0-15s4-9 2-12M17 29c-3-6 5-9 1-15s3-8 2-12M23 29c-3-5 4-8 1-13" stroke="${O}" stroke-width=".8" fill="none" opacity=".5"/>`,
+  eel: `<path d="M3 14c3-4 7-4 10 0s7 4 10 0 5-3 6-1c-1 3-3 5-6 5-3 0-5-3-10-3-3 0-6 3-9 2z" fill="#455a64" ${s()}/><circle cx="26" cy="13.5" r=".9" fill="#fff"/><path d="M4 20c2 2 5 2 7 0" ${s(1)} stroke="#2f80ed" fill="none"/>`,
+  madai: `<path d="M3 16c4-6 11-9 18-6l7-4-2 10 2 10-7-4c-7 3-14 0-18-6z" fill="#ef7b8b" ${s()}/><circle cx="9" cy="15" r="1.4" fill="${O}"/><path d="M12 8c3 1 6 1 8 3" ${s(1)} fill="none"/>`,
+  oil: `<path d="M9 9h14v18a2 2 0 0 1-2 2H11a2 2 0 0 1-2-2z" fill="#455a64" ${s()}/><ellipse cx="16" cy="9" rx="7" ry="2.2" fill="#78909c" ${s()}/><path d="M9 15h14M9 21h14" stroke="#90a4ae" stroke-width="1.4"/><path d="M16 2c-2 3-2 4 0 5 2-1 2-2 0-5z" fill="#111" ${s(1)}/>`,
+  print: `<path d="M8 4h16v8H8z" fill="#fff" ${s()}/><path d="M4 12h24v12H4z" fill="#5c6bc0" ${s()}/><path d="M8 20h16v9H8z" fill="#fff" ${s()}/><path d="M11 23h10M11 26h7" ${s(1)}/><circle cx="24" cy="15.5" r="1.2" fill="#ffd54f"/>`,
   flower: `<g fill="#f48fb1" ${s(1)}><circle cx="16" cy="9" r="4.5"/><circle cx="23" cy="14" r="4.5"/><circle cx="20" cy="22" r="4.5"/><circle cx="12" cy="22" r="4.5"/><circle cx="9" cy="14" r="4.5"/></g><circle cx="16" cy="16" r="3.2" fill="#ffd54f" ${s(1)}/>`,
   // ───────── 畜産・水産 ─────────
   cow: `<path d="M6 13c0-3 3-5 6-5h8c3 0 6 2 6 5v6c0 4-4 7-10 7S6 23 6 19z" fill="#8d6e63" ${s()}/>

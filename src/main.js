@@ -263,8 +263,9 @@ for (const d of P.designatedCities) {
 // 県庁所在地
 for (const p of prefs) {
   const diff = p.capital.replace(/市$/, '') !== p.short && p.code !== 13 && p.code !== 1;
+  // 県名と名前がちがう所在地は赤茶色で目立たせる（名前はすべて表示）
   addPoint('capitals', p.capitalLL, useIc('capital', 12), () => openPref(p.code), `${p.capital}（${p.name}の県庁所在地）`,
-    diff ? p.capital.replace(/（.*）/, '') : null, '#b23c17');
+    p.code === 13 ? '東京' : p.capital, diff ? '#b23c17' : '#5a4632');
 }
 // 世界遺産
 for (const d of H.sites) {
@@ -567,6 +568,7 @@ function homeCard() {
     ${Object.entries(byRegion).map(([r, ps]) => `<p><b>${r}</b><br>${ps.map((p) => `<button class="tag" data-pref="${p.code}">${esc(p.short)}</button>`).join(' ')}</p>`).join('')}
   </div>
   <div class="card"><h3>${icon('capital', 20)} 県名と県庁所在地名がちがう都道府県</h3>
+    <p class="hint">地図では、県名とちがう所在地の名前を<b style="color:#b23c17">赤茶色</b>で表示しています。</p>
     <div class="tags">${prefs.filter((p) => p.capital.replace(/市$/, '') !== p.short && p.code !== 13).map((p) => `<button class="tag" data-pref="${p.code}">${esc(p.short)} → ${esc(p.capital)}</button>`).join('')}</div>
   </div>`;
 }
