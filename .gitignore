@@ -2,3 +2,11 @@ node_modules
 dist
 dist-single
 .stats-cache
+
+# Claude Code のローカル設定（承認済みコマンドや秘密情報が入ることがあるため公開しない）
+.claude/settings.local.json
+
+# 環境変数ファイル（APIキー等）
+.env
+.env.*
+!.env.example
